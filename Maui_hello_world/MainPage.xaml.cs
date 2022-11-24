@@ -15,6 +15,8 @@ public partial class MainPage : ContentPage
     void OnEntryTextChanged(object sender, TextChangedEventArgs e)
     {
 		name = inputfield.Text;
+        CounterBtn.Text = $"Hello {name}";
+
     }
 
  //   void OnEtryCompleted(object sender, EventArgs e)
