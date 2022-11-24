@@ -9,10 +9,18 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+    
+	string name = "";
+	void OnEtryCompleted(object sender, EventArgs e)
+	{
+		name = inputfield.Text;
+        CounterBtn.Text = $"Hello {name}";
+    }
+
+    private void OnCounterClicked(object sender, EventArgs e)
 	{
 		
-			CounterBtn.Text = "Hello world";
+			CounterBtn.Text = $"Hello {name}";
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}

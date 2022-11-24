@@ -21,6 +21,12 @@
                 FontSize="32"
                 HorizontalOptions="Center" />
 
+            <Entry
+                x:Name="inputfield"
+  MaxLength="20"
+  Text="name."
+               Completed="OnEtryCompleted"/>
+
             <Label
                 Text="Welcome to .NET Multi-platform App UI"
                 SemanticProperties.HeadingLevel="Level2"
