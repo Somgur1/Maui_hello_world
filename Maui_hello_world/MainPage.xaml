@@ -25,7 +25,8 @@
                 x:Name="inputfield"
   MaxLength="20"
   Text="name."
-               Completed="OnEtryCompleted"/>
+                 TextChanged="OnEntryTextChanged"
+               />
 
             <Label
                 Text="Welcome to .NET Multi-platform App UI"

@@ -11,11 +11,17 @@ public partial class MainPage : ContentPage
 
     
 	string name = "";
-	void OnEtryCompleted(object sender, EventArgs e)
-	{
+
+    void OnEntryTextChanged(object sender, TextChangedEventArgs e)
+    {
 		name = inputfield.Text;
-        CounterBtn.Text = $"Hello {name}";
     }
+
+ //   void OnEtryCompleted(object sender, EventArgs e)
+	//{
+	//	name = inputfield.Text;
+ //       CounterBtn.Text = $"Hello {name}";
+ //   }
 
     private void OnCounterClicked(object sender, EventArgs e)
 	{
